@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ace's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Ace ♠️</h1>
+    <nav>
+      <ul>
+        <!-- <li><a href="register.php">Register</li> -->
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+  <section id="home" class="hero">
+    <h2>Hello, I'm Abdurrahman Abdullahi</h2>
+    <p>Creative Web Developer | Problem Solver | Graphic Designer</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a passionate developer who loves building aesthetic, functional web applications.
+      I specialize in frontend development, with strong skills in HTML, CSS, JavaScript, and modern frameworks.
+      Whether it's a slick portfolio or a complex dashboard, I enjoy bringing ideas to life through clean code.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Personal Portfolio</h3>
+        <p>A sleek, responsive portfolio to showcase my skills and background.</p>
+      </div>
+      <div class="card">
+        <h3>Weather App</h3>
+        <p>Real-time weather updates with API integration and search functionality.</p>
+      </div>
+      <div class="card">
+        <h3>Task Manager</h3>
+        <p>Interactive app for creating, organizing, and prioritizing your daily tasks.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form action="contact.php" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ace ♠️ — All rights reserved.</p>
+  </footer>
+</body>
+</html>

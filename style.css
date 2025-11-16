@@ -1,0 +1,155 @@
+:root {
+  --main-bg: #0f172a;
+  --accent: #38bdf8;
+  --text-light: #f1f5f9;
+  --text-muted: #94a3b8;
+  --card-bg: #1e293b;
+  --radius: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: var(--text-light);
+  line-height: 1.6;
+  margin: 0px 300px;
+  max-width: 2500px;
+  max-height: 1360px;
+  background-color: var(--main-bg);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background-color: var(--main-bg);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  color: var(--accent);
+  font-size: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+
+section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero {
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  color: var(--text-muted);
+  font-size: 1.2rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 2rem;
+  background: var(--accent);
+  color: var(--main-bg);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #0ea5e9;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  color: var(--text-muted);
+}
+
+.contact form {
+  display: grid;
+  gap: 1rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+input, textarea {
+  padding: 1rem;
+  border: none;
+  border-radius: var(--radius);
+  background: #334155;
+  color: var(--text-light);
+  font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+  outline: 2px solid var(--accent);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: var(--text-muted);
+  background-color: #0f172a;
+}
+
+@media (max-width: 600px) {
+  .hero h2 {
+    font-size: 2rem;
+  }
+}
